@@ -12,7 +12,7 @@ const Navbar = ({
 }) => {
   return (
     <>
-      <div className="navbar w-[100vw] flex py-3  items-center justify-evenly shadow-2xl mb-4">
+      <div className="navbar w-[100vw] flex  items-center justify-evenly shadow-2xl mb-4 py-[20px]">
         <div className="text-white text-[25px] font-bold">
           Prime Number Finder
         </div>
