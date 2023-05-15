@@ -1,8 +1,7 @@
 "use client"
 import React, { useState, useEffect } from "react";
-// import "./SortingVisualiser.css";
+import dynamic from "next/dynamic";
 import Navbar from "./Navbar";
-import ListBlocks from "./ListBlocks";
 import Details from "./Details";
 import Complexity from "./Complexity";
 import bubbleSort from "@/app/Algorithms/bubbleSort";
@@ -10,6 +9,7 @@ import insertionSort from "@/app/Algorithms/insertionSort";
 import selectionSort from "@/app/Algorithms/selectionSort";
 import mergeSort from "@/app/Algorithms/mergeSort";
 import quickSort from "@/app/Algorithms/quickSort";
+const ListBlocks =dynamic(()=>import("./ListBlocks"),{ssr:false});
 
 export default function SortingVisualiser() {
   // function randomIntFromInterval(min, max) {
